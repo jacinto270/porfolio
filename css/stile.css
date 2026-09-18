@@ -51,6 +51,19 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   color: white;
+  h1 {
+    font-size: 4rem;
+  }
+  /* tablet¨: hasta 1024px */
+  @media (max-width: 768px) {
+    h1{
+      font-size: 2rem;
+    }
+  #julioweb{
+    height: 60vh;
+  }
+    
+  }
 }
 #avatar {
   padding: 5px;
@@ -65,11 +78,24 @@ nav a:hover {
   width: 100%;
   border-radius: 50%;
 }
+
 #trabajos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2%;
 }
+ /* tablet¨: hasta 1024px */
+  @media (max-width: 1024px) {
+    #trabajos{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+ /* tablet: hasta 1024px */
+  @media (max-width: 768px) {
+    #trabajos{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 .tarjeta-trabajo img {
   width: 100%;
 }
