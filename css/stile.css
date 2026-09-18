@@ -130,8 +130,12 @@ footer {
   padding: 50px;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: rgb(129, 131, 230);
+}
+.footer-contacto{
+  display: flex;
+  flex-direction: column;
 }
 .footer-contacto a {
   text-decoration: none;
@@ -141,8 +145,9 @@ footer {
 }
 .footer-redes a {
   text-decoration: none;
-  margin: 80px;
+  margin-right: 0.5rem;
   font-family: fantasy;
   font-size: 3vh;
   color: black;
 }
+
